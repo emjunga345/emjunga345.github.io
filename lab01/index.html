@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
 </head>
 <body>
     
@@ -17,12 +18,20 @@
     color="#e6d5ca">
 </a-plane>
     <!-- rug -->
+<a-assets>
+    <img id="texture" src="../assets/img/Rugtxtr.jpg"/>
+    <img id="mirror" src="../assets/img/mirror.jpg"/>
+    <img id="wood" src="../assets/img/woodgrain.jpg"/>
+    <img id="show" src="../assets/img/tv-img.jpg"/>
+</a-assets>
+    
 <a-plane
     rotation="-90 0 0"
     position="0.621 0.014 0.835"
     width="2"
     height="2.5"
-    color="#FFFFFF">
+    color="#FFFFFF"
+    src="#texture">
 </a-plane>
 <a-entity>
   <!-- Bed -->
@@ -69,7 +78,8 @@
     depth="1.2"
     height="0.05"
     width="0.7"
-    color="#a67c5d">
+    color="#a67c5d"
+    src="#wood">
 </a-box>
 
   <!-- TV DESK SHELF BOTTOM -->
@@ -78,7 +88,8 @@
     depth="1.3"
     height="0.05"
     width="0.3"
-    color="#a67c5d">
+    color="#a67c5d"
+    src="#wood">
 </a-box>
   <!-- TV DESK SHELF TOP-->
 <a-box
@@ -86,7 +97,8 @@
     depth="1.3"
     height="0.05"
     width="0.3"
-    color="#a67c5d">
+    color="#a67c5d"
+    src="#wood">
 </a-box>
 
   <!-- TV -->
@@ -95,6 +107,14 @@
     depth="0.73"
     height="0.48"
     width="0.05"
+    src="#show">
+</a-box>
+
+<a-box
+    position="-1.68 1.020 -0.108"
+    depth="0.8"
+    height="0.50"
+    width="0.07"
     color="#000000">
 </a-box>
   <!-- tv pole right -->
@@ -140,7 +160,8 @@
     depth="0.53"
     height="0.53"
     width="0.5"
-    color="#a67c5d">
+    color="#a67c5d"
+    src="#wood">
 </a-box>
 
   <!-- record player -->
@@ -160,8 +181,11 @@
     depth="1.2"
     height="0.05"
     width="0.7"
-    color="#fffcfa">
+    color="#fffcfa"
+    material="color: #fff; sc: #rosewood_diff; roughness: .5; roughnessMap:
+    #rosewood_rough;">
 </a-box>
+
 
 <!-- BOTTOM DESK -->
 <a-box
@@ -188,7 +212,8 @@
     depth="0.03"
     height="0.70"
     width="1.0"
-    color="#dbe5ff">
+    color="#dbe5ff"
+    src="#mirror">
 </a-box>
 
 <a-entity>
@@ -298,10 +323,10 @@
 
 <!--Wall door top-->
 <a-box
-    position="2.072 2.141 -1.107"
+    position="2.072 2.238 -1.107"
     rotation="0 90 0"
     depth="0.15"
-    height="0.48"
+    height="0.30"
     width="2.136"
     color="#f7f1e9">
 </a-box>
@@ -332,7 +357,13 @@
     color="#ffd86b">
 </a-cylinder>
 
+ <a-light type="point" intensity="4.130" color="#ffddc2" decay="-0.170" position="0 0 0.326" distance="3.6"></a-light>
+  <a-light type="point" intensity="2.280" color="#ffddc2" position="1.385 0.854 3.414" decay="-0.440" distance="1.830"></a-light>
+ <a-light type="ambient" intensity="1.0" color="#ffegd1"></a-light>
+   <a-light type="directional" intensity="1.5" color="#fff2d6" position="0.444 0.798 -1.459"></a-light>
+
+
     </a-scene>
-    <script type="module" src="/src/main.js"></script>
+    
 </body>
 </html>
