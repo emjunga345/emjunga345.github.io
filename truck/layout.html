@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aframe-environment-component@1.5.0/dist/aframe-environment-component.min.js"></script>
-     
+      <script src="https://unpkg.com/aframe-extras@7.0.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-blink-controls/dist/aframe-blink-controls.min.js"></script>
+
     <title>layout</title>
 </head>
 <body>
 <a-scene>
      <a-entity environment="preset: forest; groundColor:#58755E
-; groundTexture:none;"></a-entity>
+; groundTexture:none; class="floor""></a-entity>
 
   <a-assets>
 <a-entity gltf-model="/truck/food_truck/scene.gltf" position="-0.68 -0.004 -14.8" rotation="0 -25.74 0"></a-entity>
   </a-assets>
 
+  <a-entity id="player" position="0 1.6 0">
+            <!-- camera -->
+            <a-entity id="camera" camera wasd-controls look-controls></a-entity>
+            <!-- hand controls -->
+            <a-entity id="left-hand" raycaster="objects: .floor" oculus-touch-controls="hand: left" blink-controls></a-entity>
+            <a-entity id="right-hand" raycaster="objects: .floor" oculus-touch-controls="hand: right" blink-controls></a-entity>
+        </a-entity>
 
 
 <a-entity gltf-model="/truck/food_truck/scene.gltf" position="0 0.096 0"></a-entity>
