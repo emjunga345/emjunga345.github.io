@@ -17,6 +17,9 @@
 
   <a-assets>
    <a-asset-item id="foodtruck2" src="/truck/FoodTruck.glb"></a-asset-item>
+   <a-asset-item id="logo" src="LOGO-BG.glb"></a-asset-item>
+    <a-asset-item id="logosm" src="LOGO-SM.glb"></a-asset-item>
+      <a-asset-item id="can" src="can-outline2.glb"></a-asset-item>
   </a-assets>
 
   <a-entity id="player" position="0 1.6 0">
@@ -28,7 +31,123 @@
         </a-entity>
 
 
+
 <a-entity gltf-model="/truck/FoodTruck.glb" position="-5.8306 0 -6.66087" rotation="0 -57.160000000000004 0"></a-entity>
+
+<a-circle position="-4.21459 0.01225 -5.9923" rotation="-90 0 0" radius="0.8" color="#FFC65D" geometry="radius: 1.94">
+</a-circle>
+
+<a-box position="-2.60669 0.83054 -7.35523" depth="1" height="1" width="1" color="#pink" border-radius:"20="" 20="" 0="" "="" geometry="depth: 0.05; height: 1.7" rotation="-8.39 10 0">
+</a-box>
+
+
+
+<a-cylinder position="-1.95978 0.1701 -7.77592" radius="0.3" height="1.5" color="green" geometry="height: 0.41; radius: 0.26">
+</a-cylinder>
+
+<a-cylinder position="-2.07795 0.14129 -6.9778" radius="0.3" height="1.5" color="green" geometry="height: 0.28; radius: 0.2">
+</a-cylinder>
+
+<a-circle position="5.02538 0.00379 -3.98544" rotation="-90 0 0" radius="0.8" color="#FFC65D" geometry="radius: 1.16" material="color: #f03d7b">
+</a-circle>
+
+<a-circle position="3.9889 0.00055 -5.19678" rotation="-90 0 0" radius="0.8" color="#FFC65D" geometry="radius: 1.38">
+</a-circle>
+
+<a-cylinder position="4.37457 0.1701 -6.40989" radius="0.3" height="1.5" color="green" geometry="height: 0.35; radius: 0.51">
+</a-cylinder>
+
+<a-cylinder position="6.43785 0.1701 -3.57454" radius="0.3" height="1.5" color="green" geometry="height: 0.46; radius: 0.56">
+</a-cylinder>
+
+<--! Table -->
+<a-entity>
+<a-circle position="-8.06811 0.93412 -4.38916" rotation="-90 0 0" radius="0.8" color="#FFC65D" geometry="radius: 0.56">
+</a-circle>
+
+<a-cylinder position="-8.07601 0.45537 -4.37563" radius="0.3" height="1.5" color="grey" geometry="height: 0.95; radius: 0.02">
+</a-cylinder>
+
+<a-circle position="-8.0757 0.01962 -4.38916" rotation="-90 0 0" radius="0.8" color="#FFC65D" geometry="radius: 0.16">
+</a-circle>
+</a-entity>
+
+<a-gltf-model src="#logo" scale="0.06 0.06 0.06" gltf-model="LOGO-BG.glb" position="6.75259 1.10856 -5.99396" rotation="0 -95.81 0"></a-gltf-model> 
+<a-gltf-model src="#logosm" scale="0.05 0.05 0.05" gltf-model="LOGO-SM.glb" position="6.78298 1.17713 -6.00353" rotation="0 -95.99 0">
+</a-gltf-model>
+
+<a-gltf-model src="#can" scale="0.04 0.04 0.04" gltf-model="can-outline2.glb" position="0.91347 1.24102 -7.19413" rotation="0 -54.35 0"></a-gltf-model>
+
+<!-- left side of lights on can-->
+ <a-sphere position="0.4246 0.32 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+ <a-sphere position="0.4246 0.49 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+ <a-sphere position="0.4246 0.66 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+ <a-sphere position="0.4246 0.83054 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.4246 1 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.4246 1.17031 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.4246 1.34062 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.4246 1.51093 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.4246 1.68124 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.4246 1.85155 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.4246 2.02186 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.4246 2.19217 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<!-- left side of lights on can-->
+
+<!-- right side of lights on can-->
+ <a-sphere position="1.3899 0.32 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+ <a-sphere position="1.3899 0.490 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+ <a-sphere position="1.3899 0.66 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+ <a-sphere position="1.3899 0.830 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+ <a-sphere position="1.3899 1 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+ <a-sphere position="1.3899 1.170 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="1.3899 1.34062 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="1.3899 1.51093 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="1.3899 1.68124 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="1.3899 1.85155 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="1.3899 2.02186 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="1.3899 2.19217 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="1.33223 0.15904 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.46946 0.15904 -7.20612" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.59226 0.06891 -7.1835" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.75281 0.06324 -7.14488" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.91431 0.06324 -7.11683" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="1.08585 0.06324 -7.0921" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="1.2288 0.07576 -7.06884" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.59226 2.41038 -7.1835" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+
+
 </a-scene>
 
    
