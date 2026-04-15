@@ -18,8 +18,10 @@
   <a-assets>
    <a-asset-item id="foodtruck2" src="/truck/FoodTruck.glb"></a-asset-item>
    <a-asset-item id="logo" src="LOGO-BG.glb"></a-asset-item>
-    <a-asset-item id="logosm" src="LOGO-SM.glb"></a-asset-item>
-      <a-asset-item id="can" src="can-outline2.glb"></a-asset-item>
+   <a-asset-item id="logosm" src="LOGO-SM.glb"></a-asset-item>
+   <a-asset-item id="can" src="can-outline2.glb"></a-asset-item>
+   <img id="bluerug" src="blu.jpeg"/>
+   <img id="tanrug" src="tanrug.jpeg"/>
   </a-assets>
 
   <a-entity id="player" position="0 1.6 0">
@@ -34,7 +36,7 @@
 
 <a-entity gltf-model="/truck/FoodTruck.glb" position="-5.8306 0 -6.66087" rotation="0 -57.160000000000004 0"></a-entity>
 
-<a-circle position="-4.21459 0.01225 -5.9923" rotation="-90 0 0" radius="0.8" color="#FFC65D" geometry="radius: 1.94">
+<a-circle  src="#tanrug" position="-4.21459 0.01225 -5.9923" rotation="-90 0 0" radius="0.8" geometry="radius: 1.94">
 </a-circle>
 
 <a-box position="-2.60669 0.83054 -7.35523" depth="1" height="1" width="1" color="#pink" border-radius:"20="" 20="" 0="" "="" geometry="depth: 0.05; height: 1.7" rotation="-8.39 10 0">
@@ -48,10 +50,10 @@
 <a-cylinder position="-2.07795 0.14129 -6.9778" radius="0.3" height="1.5" color="green" geometry="height: 0.28; radius: 0.2">
 </a-cylinder>
 
-<a-circle position="5.02538 0.00379 -3.98544" rotation="-90 0 0" radius="0.8" color="#FFC65D" geometry="radius: 1.16" material="color: #f03d7b">
+<a-circle position="5.02538 0.00379 -3.98544" rotation="-90 0 0" radius="0.8"  geometry="radius: 1.16" src="#bluerug">
 </a-circle>
 
-<a-circle position="3.9889 0.00055 -5.19678" rotation="-90 0 0" radius="0.8" color="#FFC65D" geometry="radius: 1.38">
+<a-circle position="3.9889 0.00055 -5.19678" rotation="-90 0 0" radius="0.8" geometry="radius: 1.38" src="#tanrug">
 </a-circle>
 
 <a-cylinder position="4.37457 0.1701 -6.40989" radius="0.3" height="1.5" color="green" geometry="height: 0.35; radius: 0.51">
@@ -76,6 +78,7 @@
 <a-gltf-model src="#logosm" scale="0.05 0.05 0.05" gltf-model="LOGO-SM.glb" position="6.78298 1.17713 -6.00353" rotation="0 -95.99 0">
 </a-gltf-model>
 
+<a-entity>
 <a-gltf-model src="#can" scale="0.04 0.04 0.04" gltf-model="can-outline2.glb" position="0.91347 1.24102 -7.19413" rotation="0 -54.35 0"></a-gltf-model>
 
 <!-- left side of lights on can-->
@@ -146,10 +149,20 @@
 </a-sphere>
 <a-sphere position="0.59226 2.41038 -7.1835" radius="0.5" color="cream" geometry="radius: 0.04">
 </a-sphere>
-
-
+<a-sphere position="0.74537 2.41198 -7.14488" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.49056 2.33217 -7.21227" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="0.91031 2.41543 -7.13313" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="1.08587 2.41543 -7.09964" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="1.2322 2.41543 -7.07677" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
+<a-sphere position="1.32238 2.32966 -7.06929" radius="0.5" color="cream" geometry="radius: 0.04">
+</a-sphere>
 </a-scene>
-
+</a-entity>
    
 </body>
 </html>
