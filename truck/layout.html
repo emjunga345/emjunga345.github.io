@@ -22,6 +22,7 @@
    <a-asset-item id="can" src="can-outline2.glb"></a-asset-item>
    <img id="bluerug" src="blu.jpeg"/>
    <img id="tanrug" src="tanrug.jpeg"/>
+   <a-asset-item id="swing" src="swing.obj"></a-asset-item>
   </a-assets>
 
   <a-entity id="player" position="0 1.6 0">
@@ -42,7 +43,7 @@
 <a-box position="-2.60669 0.83054 -7.35523" depth="1" height="1" width="1" color="#pink" border-radius:"20="" 20="" 0="" "="" geometry="depth: 0.05; height: 1.7" rotation="-8.39 10 0">
 </a-box>
 
-
+<a-entity obj-model="obj: swing.obj" scale="0.035 0.035 0.035" position="-10.75375 0.36235 1.64407" rotation="0 -2.73 0"></a-entity>
 
 <a-cylinder position="-1.95978 0.1701 -7.77592" radius="0.3" height="1.5" color="green" geometry="height: 0.41; radius: 0.26">
 </a-cylinder>
@@ -62,25 +63,46 @@
 <a-cylinder position="6.43785 0.1701 -3.57454" radius="0.3" height="1.5" color="green" geometry="height: 0.46; radius: 0.56">
 </a-cylinder>
 
+<!-- tree -->
 <a-entity position="-10.39787 2.29134 0"> 
-<a-cylinder color="#63742f" height="1.5" radius="0.4" segments-radial="32" geometry="height: 1.7; radius: 0.81" position="0 0.24177 0">
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 1.7; radius: 0.81" position="0 0.24177 0">
         </a-cylinder>
-<a-sphere color="#63742f" radius="0.4" position="0 1.10071 0" geometry="radius: 0.81">
+<a-sphere color="#a29f39" radius="0.4" position="0 1.10071 0" geometry="radius: 0.81">
         </a-sphere>
-<a-cylinder color="#63742f" height="1.5" radius="0.4" segments-radial="32" geometry="height: 2.22; radius: 0.11" position="0 -1.65533 0">
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 2.22; radius: 0.11" position="0 -1.65533 0">
         </a-cylinder>     
 </a-entity>
 
+<!-- tree -->
 <a-entity position="-10.86143 2.29134 3.30539"> 
-<a-cylinder color="#63742f" height="1.5" radius="0.4" segments-radial="32" geometry="height: 1.7; radius: 0.81" position="0 0.24177 0">
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 1.7; radius: 0.81" position="0 0.24177 0">
         </a-cylinder>
-<a-sphere color="#63742f" radius="0.4" position="0 1.10071 0" geometry="radius: 0.81">
+<a-sphere color="#a29f39" radius="0.4" position="0 1.10071 0" geometry="radius: 0.81">
         </a-sphere>
-<a-cylinder color="#63742f" height="1.5" radius="0.4" segments-radial="32" geometry="height: 2.22; radius: 0.11" position="0 -1.65533 0">
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 2.22; radius: 0.11" position="0 -1.65533 0">
         </a-cylinder>     
 </a-entity>
 
-<--! Table -->
+<!-- light -->
+<a-entity position="0 0.05 0">
+<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.25; radius: 0.11" position="-9.96013 1.34373 0.32723" opacity="0.5"></a-cylinder>
+<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.05; radius: 0.13" position="-9.96013 1.4778 0.32723"></a-cylinder>
+<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.06; radius: 0.09" position="-9.96013 1.51981 0.32723"></a-cylinder>
+<a-torus position="-9.95936 1.59145 0.33318" radius="0.8" radius-tubular="0.15" color="white" rotation="0 90 0" scale="0.05 0.05 0.05">
+</a-torus>
+<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.05; radius: 0.13" position="-9.96013 1.20446 0.32723"></a-cylinder>
+</a-entity> 
+<!-- light -->
+<a-entity position="-0.32 0.05 2.68">
+<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.25; radius: 0.11" position="-9.96013 1.34373 0.32723" opacity="0.5"></a-cylinder>
+<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.05; radius: 0.13" position="-9.96013 1.4778 0.32723"></a-cylinder>
+<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.06; radius: 0.09" position="-9.96013 1.51981 0.32723"></a-cylinder>
+<a-torus position="-9.95936 1.59145 0.33318" radius="0.8" radius-tubular="0.15" color="white" rotation="0 90 0" scale="0.05 0.05 0.05">
+</a-torus>
+<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.05; radius: 0.13" position="-9.96013 1.20446 0.32723"></a-cylinder>
+</a-entity>
+
+<!-- table -->
 <a-entity>
 <a-circle position="-8.06811 0.93412 -4.38916" rotation="-90 0 0" radius="0.8" color="#FFC65D" geometry="radius: 0.56">
 </a-circle>
