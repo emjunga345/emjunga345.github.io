@@ -38,6 +38,7 @@
 
 <a-entity gltf-model="/truck/FoodTruck.glb" position="-5.8306 0 -6.66087" rotation="0 -57.160000000000004 0"></a-entity>
 
+
 <a-circle  src="#tanrug" position="-4.21459 0.01225 -5.9923" rotation="-90 0 0" radius="0.8" geometry="radius: 1.94">
 </a-circle>
 
@@ -84,37 +85,70 @@
         </a-cylinder>     
 </a-entity>
 
-<!-- light -->
-<a-entity position="0 0.05 0">
-<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.25; radius: 0.11" position="-9.96013 1.34373 0.32723" opacity="0.5"></a-cylinder>
-<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.05; radius: 0.13" position="-9.96013 1.4778 0.32723"></a-cylinder>
-<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.06; radius: 0.09" position="-9.96013 1.51981 0.32723"></a-cylinder>
-<a-torus position="-9.95936 1.59145 0.33318" radius="0.8" radius-tubular="0.15" color="white" rotation="0 90 0" scale="0.05 0.05 0.05">
-</a-torus>
-<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.05; radius: 0.13" position="-9.96013 1.20446 0.32723"></a-cylinder>
-<a-sphere position="-9.96168 1.31289 0.32421" radius="0.5" color="#EF2D5E" scale="0.1 0.1 0.1" material="color: #ffeed1">
-</a-sphere>
-<a-light type="point" intensity="4.130" color="#ffddc2" decay="-0.170" position="-9.94298 1.4207 0.33077" distance="3.6" light="angle: 62.46; color: #ecbe88; decay: 0.57; distance: 2.38; intensity: 1.08; shadowBias: 0.12"></a-light>
+<!-- Light Right-->
+<a-entity position="-10.05414 1.41182 0.43501" scale="0.4 0.4 0.4">
 
-</a-entity> 
+  <!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5">
+  </a-sphere>
 
+  <!-- Top cap -->
+  <a-sphere position="0 0.45 0" radius="0.15" color="#FF9AA2">
+  </a-sphere>
 
-<!-- light -->
-<a-entity position="-0.32 0.05 2.68">
-<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.25; radius: 0.11" position="-9.96013 1.34373 0.32723" opacity="0.5"></a-cylinder>
-<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.05; radius: 0.13" position="-9.96013 1.4778 0.32723"></a-cylinder>
-<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.06; radius: 0.09" position="-9.96013 1.51981 0.32723"></a-cylinder>
-<a-torus position="-9.95936 1.59145 0.33318" radius="0.8" radius-tubular="0.15" color="white" rotation="0 90 0" scale="0.05 0.05 0.05">
-</a-torus>
-<a-cylinder color="white" height="1.5" radius="0.4" segments-radial="32" geometry="height: 0.05; radius: 0.13" position="-9.96013 1.20446 0.32723"></a-cylinder>
-<a-sphere position="-9.96168 1.31289 0.32421" radius="0.5" color="#EF2D5E" scale="0.1 0.1 0.1" material="color: #ffeed1">
-</a-sphere>
-<a-light type="point" intensity="4.130" color="#ffddc2" decay="-0.170" position="-9.94298 1.4207 0.33077" distance="3.6" light="angle: 62.46; color: #ecbe88; decay: 0.57; distance: 2.38; intensity: 1.08; shadowBias: 0.12"></a-light>
+  <!-- Bottom cap -->
+  <a-sphere position="0 -0.45 0" radius="0.12" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Little handle -->
+  <a-torus position="0 0.65 0" radius="0.2" radius-tubular="0.02" color="#FF9AA2" rotation="90 0 0">
+  </a-torus>
+
+  <!-- Glow light -->
+  <a-light type="point" color="#FFC1CC" intensity="1.5" distance="6">
+  </a-light>
+
+</a-entity>
+
+<!-- Light Left-->
+<a-entity position="-10.4716 1.41182 2.92319" scale="0.4 0.4 0.4">
+
+  <!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5">
+  </a-sphere>
+
+  <!-- Top cap -->
+  <a-sphere position="0 0.45 0" radius="0.15" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Bottom cap -->
+  <a-sphere position="0 -0.45 0" radius="0.12" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Little handle -->
+  <a-torus position="0 0.65 0" radius="0.2" radius-tubular="0.02" color="#FF9AA2" rotation="90 0 0">
+  </a-torus>
+
+  <!-- Glow light -->
+  <a-light type="point" color="#FFC1CC" intensity="1.5" distance="6">
+  </a-light>
+
+</a-entity>
+
+<!--Light for mirror-->
+<a-entity>
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5">
+  </a-sphere>
+
+<!-- Glow light -->
+  <a-light type="point" color="#FFC1CC" intensity="1.5" distance="6">
+  </a-light>
 </a-entity>
 
 
 
-<!-- table -->
+<!-- table 
 <a-entity>
 <a-circle position="-8.06811 0.93412 -4.38916" rotation="-90 0 0" radius="0.8" color="#FFC65D" geometry="radius: 0.56">
 </a-circle>
@@ -125,95 +159,39 @@
 <a-circle position="-8.0757 0.01962 -4.38916" rotation="-90 0 0" radius="0.8" color="#FFC65D" geometry="radius: 0.16">
 </a-circle>
 </a-entity>
+-->
 
+<!--
 <a-gltf-model src="#logo" scale="0.06 0.06 0.06" gltf-model="LOGO-BG.glb" position="6.75259 1.10856 -5.99396" rotation="0 -95.81 0"></a-gltf-model> 
 <a-gltf-model src="#logosm" scale="0.05 0.05 0.05" gltf-model="LOGO-SM.glb" position="6.78298 1.17713 -6.00353" rotation="0 -95.99 0">
 </a-gltf-model>
+ -->
 
-<a-entity>
-<a-gltf-model src="#can" scale="0.04 0.04 0.04" gltf-model="can-outline2.glb" position="0.91347 1.24102 -7.19413" rotation="0 -54.35 0"></a-gltf-model>
+<a-gltf-model src="#can" scale="0.04 0.04 0.04" gltf-model="can-outline2.glb" position="0.57113 1.21417 -7.19413" rotation="0 -54.35 0"></a-gltf-model>
 
-<!-- left side of lights on can-->
- <a-sphere position="0.4246 0.32 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
- <a-sphere position="0.4246 0.49 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
- <a-sphere position="0.4246 0.66 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
- <a-sphere position="0.4246 0.83054 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.4246 1 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.4246 1.17031 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.4246 1.34062 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.4246 1.51093 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.4246 1.68124 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.4246 1.85155 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.4246 2.02186 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.4246 2.19217 -7.20712" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<!-- left side of lights on can-->
 
-<!-- right side of lights on can-->
- <a-sphere position="1.3899 0.32 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
- <a-sphere position="1.3899 0.490 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
- <a-sphere position="1.3899 0.66 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
- <a-sphere position="1.3899 0.830 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
- <a-sphere position="1.3899 1 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
- <a-sphere position="1.3899 1.170 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="1.3899 1.34062 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="1.3899 1.51093 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="1.3899 1.68124 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="1.3899 1.85155 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="1.3899 2.02186 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="1.3899 2.19217 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="1.33223 0.15904 -7.0448" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.46946 0.15904 -7.20612" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.59226 0.06891 -7.1835" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.75281 0.06324 -7.14488" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.91431 0.06324 -7.11683" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="1.08585 0.06324 -7.0921" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="1.2288 0.07576 -7.06884" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.59226 2.41038 -7.1835" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.74537 2.41198 -7.14488" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.49056 2.33217 -7.21227" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="0.91031 2.41543 -7.13313" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="1.08587 2.41543 -7.09964" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="1.2322 2.41543 -7.07677" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
-<a-sphere position="1.32238 2.32966 -7.06929" radius="0.5" color="cream" geometry="radius: 0.04">
-</a-sphere>
+<!-- Glow light -->
+<a-entity position="0.08211 0.43105 -7.0871" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
+  </a-sphere>
+
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+  
 </a-entity>
+
+<a-entity position="0.08211 0.6079 -7.0871" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
+  </a-sphere>
+
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+  
+</a-entity>
+
+
 
 
 </a-scene>
