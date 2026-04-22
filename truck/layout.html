@@ -27,7 +27,8 @@
    <img id="menu" src="menu board.jpg" />
   <a-asset-item id="plant" src="plant.glb"></a-asset-item>
   <a-asset-item id="flowers" src="flowers.glb"></a-asset-item>
-
+   <a-asset-item id="esse" src="ess_table.glb"></a-asset-item>
+ <a-asset-item id="nce" src="nce_table.glb"></a-asset-item>
   </a-assets>
 
   <a-entity id="player" position="0 1.6 0">
@@ -52,17 +53,33 @@
 <a-entity gltf-model="/truck/can.gltf" position="-10.92493 0.96607 -0.87885" scale="0.99 1 1"></a-entity>
 <a-entity gltf-model="/truck/can.gltf" position="-11.26358 0.96607 -0.64578" scale="0.99 1 1"></a-entity>
 
-<a-entity gltf-model="#flowers"></a-entity>
+<a-entity gltf-model="flowers.glb" scale="0.1 0.1 0.1" position="-8.61325 0 -5.83717" rotation="0 -70 0"></a-entity>
+<a-entity gltf-model="flowers.glb" scale="0.1 0.1 0.1" position="-12.09802 0 -0.98821" rotation="0 180 0"></a-entity>
+<a-entity gltf-model="flowers.glb" scale="0.1 0.1 0.1" position="-12.50431 0 6.57174" rotation="0 186.35 0"></a-entity>
+<a-entity gltf-model="flowers.glb" scale="0.1 0.1 0.1" position="2.69427 0 -9.83795" rotation="0 70 0"></a-entity>
+<a-entity gltf-model="flowers.glb" scale="0.1 0.1 0.1" position="8.15389 0 -6.4702" rotation="0 -150 0"></a-entity>
 
 
 <a-entity position="-1.28592 0 2.56113" rotation="0 -2.7 0">
 <a-entity obj-model="obj: swing.obj" scale="0.035 0.035 0.035" position="-10.75375 0.36235 1.64407" rotation="0 -2.73 0"></a-entity>
 
-<a-cylinder position="4.37457 0.1701 -6.40989" radius="0.3" height="1.5" color="green" geometry="height: 0.35; radius: 0.51">
-</a-cylinder>
+<a-entity>
+<a-entity gltf-model="ess_table.glb" position="8.77187 0.4456 -6.10139" scale="0.07 0.07 0.07" rotation="0 -102.44 0"></a-entity>
+<a-box position="8.74657 0.92328 -6.04089" depth="1" height="1" width="1" color="#ffd1d1" border-radius:"20="" 20="" 0="" "="" geometry="depth: 0.05; height: 3.75; width: 1.14" rotation="90 34.26 0">
+</a-box>
+</a-entity>
+<a-box src="#menu" position="7.68404 0.95784 -7.1568" depth="1" height="1" width="1" color="white" scale="0.25 0.02 0.35" rotation="0 55 0">
+</a-box>
+<a-box src="#menu" position="8.03857 0.95784 -6.54408" depth="1" height="1" width="1" color="white" scale="0.25 0.02 0.35" rotation="0 -17.96 0">
+</a-box>
+<a-box src="#menu" position="8.89764 0.95784 -5.30276" depth="1" height="1" width="1" color="white" scale="0.25 0.02 0.35" rotation="0 -90 0">
+</a-box>
 
-<a-cylinder position="6.43785 0.1701 -3.57454" radius="0.3" height="1.5" color="green" geometry="height: 0.46; radius: 0.56">
-</a-cylinder>
+<a-entity gltf-model="nce_table.glb" position="11.71764 0.42656 -0.14223" scale="0.06 0.06 0.06" rotation="0 -123.94 0"></a-entity>
+<a-box position="11.74807 0.90731 -0.14695" depth="1" height="1" width="1" color="#ffd1d1" border-radius:"20="" 20="" 0="" "="" geometry="depth: 0.05; height: 3.46; width: 0.98" rotation="90 10.16 0">
+</a-box>
+
+
 
 <!-- tree -->
 <a-entity position="-10.39787 2.29134 0"> 
@@ -137,11 +154,82 @@
 <a-entity position="-0.30789 0.00049 0.22013" rotation="0 -28.700000000000003 0">
 <a-entity obj-model="obj: swing.obj" scale="0.035 0.035 0.035" position="-10.75375 0.36235 1.64407" rotation="0 -2.73 0"></a-entity>
 
-<a-cylinder position="4.37457 0.1701 -6.40989" radius="0.3" height="1.5" color="green" geometry="height: 0.35; radius: 0.51">
-</a-cylinder>
 
-<a-cylinder position="6.43785 0.1701 -3.57454" radius="0.3" height="1.5" color="green" geometry="height: 0.46; radius: 0.56">
-</a-cylinder>
+
+<!-- tree -->
+<a-entity position="-10.39787 2.29134 0"> 
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 1.7; radius: 0.81" position="0 0.24177 0">
+        </a-cylinder>
+<a-sphere color="#a29f39" radius="0.4" position="0 1.10071 0" geometry="radius: 0.81">
+        </a-sphere>
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 2.22; radius: 0.11" position="0 -1.65533 0">
+        </a-cylinder>     
+</a-entity>
+
+<!-- tree -->
+<a-entity position="-10.86143 2.29134 3.30539"> 
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 1.7; radius: 0.81" position="0 0.24177 0">
+        </a-cylinder>
+<a-sphere color="#a29f39" radius="0.4" position="0 1.10071 0" geometry="radius: 0.81">
+        </a-sphere>
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 2.22; radius: 0.11" position="0 -1.65533 0">
+        </a-cylinder>     
+</a-entity>
+
+<!-- Light Right-->
+<a-entity position="-10.05414 1.41182 0.43501" scale="0.4 0.4 0.4">
+
+  <!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5">
+  </a-sphere>
+
+  <!-- Top cap -->
+  <a-sphere position="0 0.45 0" radius="0.15" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Bottom cap -->
+  <a-sphere position="0 -0.45 0" radius="0.12" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Little handle -->
+  <a-torus position="0 0.65 0" radius="0.2" radius-tubular="0.02" color="#FF9AA2" rotation="90 0 0">
+  </a-torus>
+
+  <!-- Glow light -->
+  <a-light type="point" color="#FFC1CC" intensity="1.5" distance="6">
+  </a-light>
+
+</a-entity>
+
+<!-- Light Left-->
+<a-entity position="-10.4716 1.41182 2.92319" scale="0.4 0.4 0.4">
+
+  <!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5">
+  </a-sphere>
+
+  <!-- Top cap -->
+  <a-sphere position="0 0.45 0" radius="0.15" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Bottom cap -->
+  <a-sphere position="0 -0.45 0" radius="0.12" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Little handle -->
+  <a-torus position="0 0.65 0" radius="0.2" radius-tubular="0.02" color="#FF9AA2" rotation="90 0 0">
+  </a-torus>
+
+  <!-- Glow light -->
+  <a-light type="point" color="#FFC1CC" intensity="1.5" distance="6">
+  </a-light>
+
+</a-entity>
+</a-entity>
+<a-entity position="1.52939 -0.00396 1.73058" rotation="0 -119.99999999999999 0">
+<a-entity obj-model="obj: swing.obj" scale="0.035 0.035 0.035" position="-10.75375 0.36235 1.64407" rotation="0 -2.73 0"></a-entity>
+
+
 
 <!-- tree -->
 <a-entity position="-10.39787 2.29134 0"> 
@@ -214,6 +302,41 @@
 </a-entity>
 </a-entity>
 
+<!--Chair-->
+<a-entity position="16.27862 0 -0.39396">
+
+<a-cylinder position="-8.07601 0.2224 -4.37563" radius="0.3" height="1.5" color="#ed92d0" geometry="height: 0.37; radius: 0.06">
+</a-cylinder><a-cylinder position="-8.07601 0.39116 -4.37563" radius="0.3" height="1.5" color="#ed92d0" geometry="height: 0.21; radius: 0.29">
+</a-cylinder>
+
+<a-circle position="-8.0757 0.01962 -4.38916" rotation="-90 0 0" radius="0.8" color="#ed92d0" geometry="radius: 0.16">
+</a-circle>
+</a-entity>
+
+<!--Chair2-->
+<a-entity position="16.96099 0 0.7815">
+
+<a-cylinder position="-8.07601 0.2224 -4.37563" radius="0.3" height="1.5" color="#ed92d0" geometry="height: 0.37; radius: 0.06">
+</a-cylinder><a-cylinder position="-8.07601 0.39116 -4.37563" radius="0.3" height="1.5" color="#ed92d0" geometry="height: 0.21; radius: 0.29">
+</a-cylinder>
+
+<a-circle position="-8.0757 0.01962 -4.38916" rotation="-90 0 0" radius="0.8" color="#ed92d0" geometry="radius: 0.16">
+</a-circle>
+</a-entity>
+
+
+<!--Chair3-->
+<a-entity position="17.571 -0.01 1.9515">
+
+<a-cylinder position="-8.07601 0.2224 -4.37563" radius="0.3" height="1.5" color="#ed92d0" geometry="height: 0.37; radius: 0.06">
+</a-cylinder><a-cylinder position="-8.07601 0.39116 -4.37563" radius="0.3" height="1.5" color="#ed92d0" geometry="height: 0.21; radius: 0.29">
+</a-cylinder>
+
+<a-circle position="-8.0757 0.01962 -4.38916" rotation="-90 0 0" radius="0.8" color="#ed92d0" geometry="radius: 0.16">
+</a-circle>
+</a-entity>
+
+<a-entity>
 <a-box src="#menu" position="-11.05773 0.95093 -0.20725" depth="1" height="1" width="1" color="white" scale="0.25 0.02 0.35" rotation="0 55 0">
 </a-box>
 <a-box src="#menu" position="-10.9272 0.95248 -0.3316" depth="1" height="1" width="1" color="white" scale="0.25 0.02 0.35" rotation="0 61.379999999999995 0">
@@ -230,7 +353,41 @@
 <a-circle position="-8.0757 0.01962 -4.38916" rotation="-90 0 0" radius="0.8" color="#ed92d0" geometry="radius: 0.16">
 </a-circle>
 </a-entity>
+</a-entity>
 
+
+<!-- table -->
+<a-entity position="-3.15761 0.02166 3.98508">
+<a-circle position="-8.06811 0.93412 -4.38916" rotation="-90 0 0" radius="0.8" color="#ed92d0" geometry="radius: 0.56">
+</a-circle>
+
+<a-cylinder position="-8.07601 0.45537 -4.37563" radius="0.3" height="1.5" color="#ed92d0" geometry="height: 0.95; radius: 0.02">
+</a-cylinder>
+
+<a-circle position="-8.0757 0.01962 -4.38916" rotation="-90 0 0" radius="0.8" color="#ed92d0" geometry="radius: 0.16">
+</a-circle>
+</a-entity>
+</a-entity>
+
+
+<a-entity position="-0.76861 0.04565 1.3873">
+<a-box src="#menu" position="-11.05773 0.95093 -0.20725" depth="1" height="1" width="1" color="white" scale="0.25 0.02 0.35" rotation="0 55 0">
+</a-box>
+<a-box src="#menu" position="-10.9272 0.95248 -0.3316" depth="1" height="1" width="1" color="white" scale="0.25 0.02 0.35" rotation="0 61.379999999999995 0">
+</a-box>
+
+<!-- table -->
+<a-entity position="-3.15761 0.02166 3.98508">
+<a-circle position="-8.06811 0.93412 -4.38916" rotation="-90 0 0" radius="0.8" color="#ed92d0" geometry="radius: 0.56">
+</a-circle>
+
+<a-cylinder position="-8.07601 0.45537 -4.37563" radius="0.3" height="1.5" color="#ed92d0" geometry="height: 0.95; radius: 0.02">
+</a-cylinder>
+
+<a-circle position="-8.0757 0.01962 -4.38916" rotation="-90 0 0" radius="0.8" color="#ed92d0" geometry="radius: 0.16">
+</a-circle>
+</a-entity>
+</a-entity>
 
 <!--
 <a-gltf-model src="#logo" scale="0.06 0.06 0.06" gltf-model="LOGO-BG.glb" position="6.75259 1.10856 -5.99396" rotation="0 -95.81 0"></a-gltf-model> 
