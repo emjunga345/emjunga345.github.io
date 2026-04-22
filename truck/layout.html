@@ -23,6 +23,8 @@
    <img id="bluerug" src="blu.jpeg"/>
    <img id="tanrug" src="tanrug.jpeg"/>
    <a-asset-item id="swing" src="swing.obj"></a-asset-item>
+   <img id="menu" src="menu board.jpg" />
+  <a-asset-item id="plant" src="plant.glb"></a-asset-item>
 
   </a-assets>
 
@@ -38,26 +40,96 @@
 
 <a-entity gltf-model="/truck/FoodTruck.glb" position="-5.8306 0 -6.66087" rotation="0 -57.160000000000004 0"></a-entity>
 
+<a-entity gltf-model="plant.glb" position="-1.82436 0.0172 -7.73942"></a-entity>
 
-<a-circle  src="#tanrug" position="-4.21459 0.01225 -5.9923" rotation="-90 0 0" radius="0.8" geometry="radius: 1.94">
-</a-circle>
+<a-entity gltf-model="plant.glb" position="-3.32709 0.0172 -6.99356" scale="0.6 0.6 0.6"></a-entity>
 
-<a-box position="-2.60669 0.83054 -7.35523" depth="1" height="1" width="1" color="#pink" border-radius:"20="" 20="" 0="" "="" geometry="depth: 0.05; height: 1.7" rotation="-8.39 10 0">
+<a-box src="#menu" position="-2.60669 0.83054 -7.35523" depth="1" height="1" width="1" color="#pink" border-radius:"20="" 20="" 0="" "="" geometry="depth: 0.05; height: 1.7" rotation="-8.39 10 0">
 </a-box>
 
+
+
+<a-entity position="-1.28592 0 2.56113" rotation="0 -2.7 0">
 <a-entity obj-model="obj: swing.obj" scale="0.035 0.035 0.035" position="-10.75375 0.36235 1.64407" rotation="0 -2.73 0"></a-entity>
 
-<a-cylinder position="-1.95978 0.1701 -7.77592" radius="0.3" height="1.5" color="green" geometry="height: 0.41; radius: 0.26">
+<a-cylinder position="4.37457 0.1701 -6.40989" radius="0.3" height="1.5" color="green" geometry="height: 0.35; radius: 0.51">
 </a-cylinder>
 
-<a-cylinder position="-2.07795 0.14129 -6.9778" radius="0.3" height="1.5" color="green" geometry="height: 0.28; radius: 0.2">
+<a-cylinder position="6.43785 0.1701 -3.57454" radius="0.3" height="1.5" color="green" geometry="height: 0.46; radius: 0.56">
 </a-cylinder>
 
-<a-circle position="5.02538 0.00379 -3.98544" rotation="-90 0 0" radius="0.8"  geometry="radius: 1.16" src="#bluerug">
-</a-circle>
+<!-- tree -->
+<a-entity position="-10.39787 2.29134 0"> 
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 1.7; radius: 0.81" position="0 0.24177 0">
+        </a-cylinder>
+<a-sphere color="#a29f39" radius="0.4" position="0 1.10071 0" geometry="radius: 0.81">
+        </a-sphere>
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 2.22; radius: 0.11" position="0 -1.65533 0">
+        </a-cylinder>     
+</a-entity>
 
-<a-circle position="3.9889 0.00055 -5.19678" rotation="-90 0 0" radius="0.8" geometry="radius: 1.38" src="#tanrug">
-</a-circle>
+<!-- tree -->
+<a-entity position="-10.86143 2.29134 3.30539"> 
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 1.7; radius: 0.81" position="0 0.24177 0">
+        </a-cylinder>
+<a-sphere color="#a29f39" radius="0.4" position="0 1.10071 0" geometry="radius: 0.81">
+        </a-sphere>
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 2.22; radius: 0.11" position="0 -1.65533 0">
+        </a-cylinder>     
+</a-entity>
+
+<!-- Light Right-->
+<a-entity position="-10.05414 1.41182 0.43501" scale="0.4 0.4 0.4">
+
+  <!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5">
+  </a-sphere>
+
+  <!-- Top cap -->
+  <a-sphere position="0 0.45 0" radius="0.15" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Bottom cap -->
+  <a-sphere position="0 -0.45 0" radius="0.12" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Little handle -->
+  <a-torus position="0 0.65 0" radius="0.2" radius-tubular="0.02" color="#FF9AA2" rotation="90 0 0">
+  </a-torus>
+
+  <!-- Glow light -->
+  <a-light type="point" color="#FFC1CC" intensity="1.5" distance="6">
+  </a-light>
+
+</a-entity>
+
+<!-- Light Left-->
+<a-entity position="-10.4716 1.41182 2.92319" scale="0.4 0.4 0.4">
+
+  <!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5">
+  </a-sphere>
+
+  <!-- Top cap -->
+  <a-sphere position="0 0.45 0" radius="0.15" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Bottom cap -->
+  <a-sphere position="0 -0.45 0" radius="0.12" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Little handle -->
+  <a-torus position="0 0.65 0" radius="0.2" radius-tubular="0.02" color="#FF9AA2" rotation="90 0 0">
+  </a-torus>
+
+  <!-- Glow light -->
+  <a-light type="point" color="#FFC1CC" intensity="1.5" distance="6">
+  </a-light>
+</a-entity>
+</a-entity>
+
+<a-entity position="-0.30789 0.00049 0.22013" rotation="0 -28.700000000000003 0">
+<a-entity obj-model="obj: swing.obj" scale="0.035 0.035 0.035" position="-10.75375 0.36235 1.64407" rotation="0 -2.73 0"></a-entity>
 
 <a-cylinder position="4.37457 0.1701 -6.40989" radius="0.3" height="1.5" color="green" geometry="height: 0.35; radius: 0.51">
 </a-cylinder>
@@ -134,32 +206,20 @@
   </a-light>
 
 </a-entity>
-
-<!--Light for mirror-->
-<a-entity>
-<!-- Main body (round + soft) -->
-  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5">
-  </a-sphere>
-
-<!-- Glow light -->
-  <a-light type="point" color="#FFC1CC" intensity="1.5" distance="6">
-  </a-light>
 </a-entity>
 
-
-
-<!-- table 
-<a-entity>
-<a-circle position="-8.06811 0.93412 -4.38916" rotation="-90 0 0" radius="0.8" color="#FFC65D" geometry="radius: 0.56">
+<!-- table -->
+<a-entity position="-3.15761 0.02166 3.98508">
+<a-circle position="-8.06811 0.93412 -4.38916" rotation="-90 0 0" radius="0.8" color="#ed92d0" geometry="radius: 0.56">
 </a-circle>
 
-<a-cylinder position="-8.07601 0.45537 -4.37563" radius="0.3" height="1.5" color="grey" geometry="height: 0.95; radius: 0.02">
+<a-cylinder position="-8.07601 0.45537 -4.37563" radius="0.3" height="1.5" color="#ed92d0" geometry="height: 0.95; radius: 0.02">
 </a-cylinder>
 
-<a-circle position="-8.0757 0.01962 -4.38916" rotation="-90 0 0" radius="0.8" color="#FFC65D" geometry="radius: 0.16">
+<a-circle position="-8.0757 0.01962 -4.38916" rotation="-90 0 0" radius="0.8" color="#ed92d0" geometry="radius: 0.16">
 </a-circle>
 </a-entity>
--->
+
 
 <!--
 <a-gltf-model src="#logo" scale="0.06 0.06 0.06" gltf-model="LOGO-BG.glb" position="6.75259 1.10856 -5.99396" rotation="0 -95.81 0"></a-gltf-model> 
@@ -167,32 +227,147 @@
 </a-gltf-model>
  -->
 
+<a-entity> <!--Can W/ Lights-->
 <a-gltf-model src="#can" scale="0.04 0.04 0.04" gltf-model="can-outline2.glb" position="0.57113 1.21417 -7.19413" rotation="0 -54.35 0"></a-gltf-model>
-
-
-<!-- Glow light -->
+<!-- Glow light left -->
 <a-entity position="0.08211 0.43105 -7.0871" scale="0.1 0.1 0.1">
 <!-- Main body (round + soft) -->
   <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
   </a-sphere>
-
 <a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
   </a-light>
-  
 </a-entity>
-
-<a-entity position="0.08211 0.6079 -7.0871" scale="0.1 0.1 0.1">
+<a-entity position="0.08211 0.78497 -7.0871" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
+  </a-sphere>
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+</a-entity> 
+<a-entity position="0.08211 1.13812 -7.0871" scale="0.1 0.1 0.1">
 <!-- Main body (round + soft) -->
   <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
   </a-sphere>
 
 <a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
   </a-light>
-  
 </a-entity>
 
+<a-entity position="0.08211 0.08866 -7.0871" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.80777 -1.19756">
+  </a-sphere>
 
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+  
+</a-entity>
+<a-entity position="0.08211 1.49418 -7.0871" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
+  </a-sphere>
 
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+</a-entity>
+
+<a-entity position="0.08211 1.88118 -7.0871" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
+  </a-sphere>
+
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+</a-entity>
+<a-entity position="0.13642 2.32692 -7.07126" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
+  </a-sphere>
+
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+</a-entity>
+
+<a-entity position="0.53908 2.32692 -7.00414" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
+  </a-sphere>
+
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+</a-entity>
+
+<a-entity position="0.95578 2.32749 -6.94595" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
+  </a-sphere>
+
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+</a-entity>
+
+<!-- light right-->
+ <a-entity position="1.04866 1.88118 -6.92326" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
+  </a-sphere>
+
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+</a-entity>
+
+<a-entity position="1.04367 1.49418 -6.91446" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
+  </a-sphere>
+
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+</a-entity>
+
+<a-entity position="1.04668 1.13812 -6.93378" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
+  </a-sphere>
+
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+</a-entity>
+<a-entity position="1.04242 0.78497 -6.93411" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
+  </a-sphere>
+
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+</a-entity>
+
+<a-entity position="1.04262 0.43105 -6.93068" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
+  </a-sphere>
+
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+</a-entity>
+
+<a-entity position="1.02549 0.07905 -6.9443" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.80777 -1.19756">
+  </a-sphere>
+
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+</a-entity>
+<a-entity position="0.53908 -0.01362 -7.01848" scale="0.1 0.1 0.1">
+<!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5" position="0 0.5979 -1.19756">
+  </a-sphere>
+
+<a-light type="point" color="#FFC1CC" intensity="1.5" distance="6" light="decay: 0.51; intensity: 1.78" position="0 0.61864 -0.47049">
+  </a-light>
+</a-entity>
+</a-entity>
 
 </a-scene>
 
