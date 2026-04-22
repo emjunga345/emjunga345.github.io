@@ -17,6 +17,7 @@
 
   <a-assets>
    <a-asset-item id="foodtruck2" src="/truck/FoodTruck.glb"></a-asset-item>
+   <a-asset-item id="can" src="/truck/can.gltf"></a-asset-item>
    <a-asset-item id="logo" src="LOGO-BG.glb"></a-asset-item>
    <a-asset-item id="logosm" src="LOGO-SM.glb"></a-asset-item>
    <a-asset-item id="can" src="can-outline2.glb"></a-asset-item>
@@ -25,6 +26,7 @@
    <a-asset-item id="swing" src="swing.obj"></a-asset-item>
    <img id="menu" src="menu board.jpg" />
   <a-asset-item id="plant" src="plant.glb"></a-asset-item>
+  <a-asset-item id="flowers" src="flowers.glb"></a-asset-item>
 
   </a-assets>
 
@@ -47,6 +49,10 @@
 <a-box src="#menu" position="-2.60669 0.83054 -7.35523" depth="1" height="1" width="1" color="#pink" border-radius:"20="" 20="" 0="" "="" geometry="depth: 0.05; height: 1.7" rotation="-8.39 10 0">
 </a-box>
 
+<a-entity gltf-model="/truck/can.gltf" position="-10.92493 0.96607 -0.87885" scale="0.99 1 1"></a-entity>
+<a-entity gltf-model="/truck/can.gltf" position="-11.26358 0.96607 -0.64578" scale="0.99 1 1"></a-entity>
+
+<a-entity gltf-model="#flowers"></a-entity>
 
 
 <a-entity position="-1.28592 0 2.56113" rotation="0 -2.7 0">
@@ -207,6 +213,11 @@
 
 </a-entity>
 </a-entity>
+
+<a-box src="#menu" position="-11.05773 0.95093 -0.20725" depth="1" height="1" width="1" color="white" scale="0.25 0.02 0.35" rotation="0 55 0">
+</a-box>
+<a-box src="#menu" position="-10.9272 0.95248 -0.3316" depth="1" height="1" width="1" color="white" scale="0.25 0.02 0.35" rotation="0 61.379999999999995 0">
+</a-box>
 
 <!-- table -->
 <a-entity position="-3.15761 0.02166 3.98508">
