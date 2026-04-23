@@ -33,11 +33,12 @@
 
   </a-assets>
 
-  <!--pond-->
-<a-entity position="-5.53 0 1.25548" rotation="0 -9.17 0">
+
+<a-entity position="-2.32406 0 5.50485">
 <a-ocean ocean-state="large_normal_map: './my-image-files/custom-large-normal-map.png';
     small_normal_map: './my-image-files/custom-small-normal-map.png';
     small_normal_map_strength: 0.2;" position="3.77728 0.05055 4.53238" scale="0.4 0.62 0.1" ocean="depth: 6.44; density: 9.35; amplitude: 0.37; speed: 0.89; speedVariance: 1.26" rotation="-90 0 0.09"></a-ocean>
+
 
 <a-box geometry="depth: 4.03; height: 0.26; width: 0.18" position="1.67928 0 4.54913"></a-box>
 <a-box geometry="depth: 4.03; height: 0.26; width: 0.18" position="5.78023 0 4.54913"></a-box>
@@ -75,6 +76,8 @@
 <a-entity gltf-model="flowers.glb" scale="0.1 0.1 0.1" position="-12.50431 0 6.57174" rotation="0 186.35 0"></a-entity>
 <a-entity gltf-model="flowers.glb" scale="0.1 0.1 0.1" position="2.69427 0 -9.83795" rotation="0 70 0"></a-entity>
 <a-entity gltf-model="flowers.glb" scale="0.1 0.1 0.1" position="8.15389 0 -6.4702" rotation="0 -150 0"></a-entity>
+<a-entity gltf-model="flowers.glb" scale="0.1 0.1 0.1" position="-1.44055 0 14.4389" rotation="0 90 0"></a-entity>
+<a-entity gltf-model="flowers.glb" scale="0.1 0.1 0.1" position="4.08213 0 14.77285" rotation="0 180 0"></a-entity>
 
 
 <a-entity position="-1.28592 0 2.56113" rotation="0 -2.7 0">
@@ -318,6 +321,82 @@
 
 </a-entity>
 </a-entity>
+
+<a-entity position="-1.18577 0.15787 3.54918" rotation="0 95.56000000000002 0">
+<a-entity obj-model="obj: swing.obj" scale="0.035 0.035 0.035" position="-10.75375 0.36235 1.64407" rotation="0 -2.73 0"></a-entity>
+
+<!-- tree -->
+<a-entity position="-10.39787 2.29134 0"> 
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 1.7; radius: 0.81" position="0 0.24177 0">
+        </a-cylinder>
+<a-sphere color="#a29f39" radius="0.4" position="0 1.10071 0" geometry="radius: 0.81">
+        </a-sphere>
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 2.22; radius: 0.11" position="0 -1.65533 0">
+        </a-cylinder>     
+</a-entity>
+
+<!-- tree -->
+<a-entity position="-10.86143 2.29134 3.30539"> 
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 1.7; radius: 0.81" position="0 0.24177 0">
+        </a-cylinder>
+<a-sphere color="#a29f39" radius="0.4" position="0 1.10071 0" geometry="radius: 0.81">
+        </a-sphere>
+<a-cylinder color="#a29f39" height="1.5" radius="0.4" segments-radial="32" geometry="height: 2.22; radius: 0.11" position="0 -1.65533 0">
+        </a-cylinder>     
+</a-entity>
+
+<!-- Light Right-->
+<a-entity position="-10.05414 1.41182 0.43501" scale="0.4 0.4 0.4">
+
+  <!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5">
+  </a-sphere>
+
+  <!-- Top cap -->
+  <a-sphere position="0 0.45 0" radius="0.15" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Bottom cap -->
+  <a-sphere position="0 -0.45 0" radius="0.12" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Little handle -->
+  <a-torus position="0 0.65 0" radius="0.2" radius-tubular="0.02" color="#FF9AA2" rotation="90 0 0">
+  </a-torus>
+
+  <!-- Glow light -->
+  <a-light type="point" color="#FFC1CC" intensity="1.5" distance="6">
+  </a-light>
+
+</a-entity>
+
+<!-- Light Left-->
+<a-entity position="-10.4716 1.41182 2.92319" scale="0.4 0.4 0.4">
+
+  <!-- Main body (round + soft) -->
+  <a-sphere radius="0.35" scale="1 1.2 1" material="opacity: 0.6; transparent: true; color: #FFE4EC; emissive: #FFB6C1; emissiveIntensity: 0.5">
+  </a-sphere>
+
+  <!-- Top cap -->
+  <a-sphere position="0 0.45 0" radius="0.15" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Bottom cap -->
+  <a-sphere position="0 -0.45 0" radius="0.12" color="#FF9AA2">
+  </a-sphere>
+
+  <!-- Little handle -->
+  <a-torus position="0 0.65 0" radius="0.2" radius-tubular="0.02" color="#FF9AA2" rotation="90 0 0">
+  </a-torus>
+
+  <!-- Glow light -->
+  <a-light type="point" color="#FFC1CC" intensity="1.5" distance="6">
+  </a-light>
+</a-entity>
+</a-entity>
+
+
+ 
 
 <!--Chair-->
 <a-entity position="16.27862 0 -0.39396">
