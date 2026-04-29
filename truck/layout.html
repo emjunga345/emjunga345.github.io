@@ -22,7 +22,7 @@
    <a-asset-item id="logosm" src="LOGO-SM.glb"></a-asset-item>
    <a-asset-item id="can" src="can-outline2.glb"></a-asset-item>
    <img id="bluerug" src="blu.jpeg"/>
-   <img id="tanrug" src="tanrug.jpeg"/>
+   <img id="whiterug" src="whiterug.jpeg"/>
    <img id="benefits" src="benefits.jpg"/>
    <a-asset-item id="swing" src="swing.obj"></a-asset-item>
    <img id="menu" src="menu board.jpg" />
@@ -32,12 +32,19 @@
  <a-asset-item id="nce" src="nce_table.glb"></a-asset-item>
   <a-asset-item id="rocks" src="river_rocks.glb"></a-asset-item>
   <a-asset-item id="blanket1" src="blanket.glb"></a-asset-item>
-    <a-asset-item id="blanket2" src="simple_waves_cushionpillow.glb"></a-asset-item>
+    <a-asset-item id="blanket2" src="blanket_and_pillows.glb"></a-asset-item>
   <a-asset-item id="glassdrinks" src="glass_drinks.glb"></a-asset-item>
    <a-asset-item id="lilypad" src="lotus_flower_with_lillypad.glb"></a-asset-item>
- <a-asset-item id="path" src="stone_path_plane.glb"></a-asset-item>
-  </a-assets>
+   <a-asset-item id="pillows-obj" src="colorpillows.obj"></a-asset-item>
+   <a-asset-item id="girl" src="character_people_girl_001.glb"></a-asset-item>
+   <a-asset-item id="girl2" src="free_018_kana_sitting.glb"></a-asset-item>   
+   <a-asset-item id="cat" src="cat.glb"></a-asset-item>   
 
+  </a-assets>
+<!--people-->
+<a-entity gltf-model="character_people_girl_001.glb" scale="0.03 0.03 0.03" position="-3.44223 1.04078 1.48323" rotation="0 -145.64 0"></a-entity>
+<a-entity gltf-model="free_018_kana_sitting.glb" scale="0.012 0.012 0.012" position="9.55675 0 -6.46795" rotation="0 -40 0"></a-entity>
+<a-entity gltf-model="cat.glb" position="-7.78541 0.22815 -1.15055" scale="0.8 0.8 0.8" rotation="0 90 0"></a-entity>
 
 <a-entity position="-2.32406 0 5.50485">
 <a-ocean ocean-state="large_normal_map: './my-image-files/custom-large-normal-map.png';
@@ -62,15 +69,7 @@
             <a-entity id="right-hand" raycaster="objects: .floor" oculus-touch-controls="hand: right" blink-controls></a-entity>
         </a-entity>
 
-<!--path-->
-<a-entity gltf-model="stone_path_plane.glb" position="-3.89358 0.00707 -4.47917" rotation="0 34 0"></a-entity>
-<a-entity gltf-model="stone_path_plane.glb" position="-2.21233 0.01042 -1.9909" rotation="0 34 0"></a-entity>
-<a-entity gltf-model="stone_path_plane.glb" position="-0.54098 0.00707 0.45602" rotation="0 34 0"></a-entity>
-<a-entity gltf-model="stone_path_plane.glb" position="-0.49163 0.01242 2.02866" rotation="0 -29.999999999999996 0"></a-entity>
-<a-entity gltf-model="stone_path_plane.glb" position="-2.00145 0.01242 4.63855" rotation="0 -29.999999999999996 0"></a-entity>
-<a-entity gltf-model="stone_path_plane.glb" position="-3.50358 0.01242 7.23477" rotation="0 -29.999999999999996 0"></a-entity>
-<a-entity gltf-model="stone_path_plane.glb" position="-5.00144 0.01242 9.82995" rotation="0 -29.999999999999996 0"></a-entity>
-<a-entity gltf-model="stone_path_plane.glb" position="-5.64376 0.03632 12.10495" rotation="-1.78 -0.82 0"></a-entity>
+
 
 <a-entity gltf-model="/truck/FoodTruck.glb" position="-5.8306 0 -6.66087" rotation="0 -57.160000000000004 0"></a-entity>
 
@@ -93,6 +92,16 @@
 
 <a-entity gltf-model="blanket.glb" scale="2.93 0.61 3.36" position="4.48044 0 2.57909" rotation="0 -13.29 0"></a-entity>
 
+<a-entity gltf-model="blanket.glb" scale="2.93 0.61 3.36" position="4.48044 0 2.57909" rotation="0 -13.29 0"></a-entity>
+
+<a-entity gltf-model="blanket.glb" scale="2.93 0.61 3.36" position="-6.72924 -0.00857 5.85606" rotation="0 -13.29 0"></a-entity>
+
+<a-entity gltf-model="blanket.glb" scale="2.93 0.61 3.36" position="-6.45058 -0.00857 -1.46555" rotation="0 -37.29 0"></a-entity>
+
+<a-entity obj-model="obj: colorpillows.obj" scale="0.08 0.08 0.08" position="-6.72022 0 6.89745"></a-entity>
+<a-entity obj-model="obj: colorpillows.obj" scale="0.08 0.08 0.08" position="5.16903 0 2.01224"></a-entity>
+<a-entity obj-model="obj: colorpillows.obj" scale="0.08 0.08 0.08" position="-5.86248 0 -2.14404" rotation="0 -31 0"></a-entity>
+
 
 
 <a-entity gltf-model="/truck/can.gltf" position="-10.92493 0.96607 -0.87885" scale="0.99 1 1"></a-entity>
@@ -107,9 +116,10 @@
 <a-entity gltf-model="flowers.glb" scale="0.1 0.1 0.1" position="4.08213 0 14.77285" rotation="0 180 0"></a-entity>
 
 <!--rugs-->
-<a-cylinder geometry="height: 0.02" position="5.2059 0 -7.84656"></a-cylinder>
-<a-cylinder geometry="height: 0.02" position="-11.63693 0.07972 3.73633"></a-cylinder>
-<a-cylinder geometry="height: 0.02" position="-12.885 0.01374 -2.54833"></a-cylinder>
+<a-cylinder src="#whiterug" geometry="height: 0.02" position="5.2059 0 -7.84656"></a-cylinder>
+<a-cylinder src="#whiterug" geometry="height: 0.02" position="-11.63693 0.07972 3.73633"></a-cylinder>
+<a-cylinder src="#whiterug" geometry="height: 0.02" position="-12.885 0.01374 -2.54833"></a-cylinder>
+
 
 <a-entity gltf-model="glass_drinks.glb" scale="0.01 0.01 0.01" position="-4.11319 1.24288 -6.61096" rotation="0 -29.999999999999996 0"></a-entity>
 
