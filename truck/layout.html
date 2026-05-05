@@ -36,7 +36,7 @@
    <a-asset-item id="pillows-obj" src="colorpillows.obj"></a-asset-item>
    <a-asset-item id="cat" src="cat.glb"></a-asset-item>  
   <a-asset-item id="can1" src="single_can.glb"></a-asset-item> 
-
+ <audio id="ambient-sound" src="audio.mp3" preload="auto"></audio>
   </a-assets>
 <!--cat-->
 <a-entity gltf-model="cat.glb" position="-7.78541 0.22815 -1.15055" scale="0.8 0.8 0.8" rotation="0 90 0"></a-entity>
@@ -73,7 +73,6 @@
 </a-entity>
 
 
-
   <a-entity id="player" position="0 1.6 0">
             <!-- camera -->
             <a-entity id="camera" camera wasd-controls look-controls></a-entity>
@@ -84,7 +83,7 @@
 
 
 
-<a-entity gltf-model="/truck/FoodTruck.glb" position="-5.8306 0 -6.66087" rotation="0 -57.160000000000004 0"></a-entity>
+<a-entity gltf-model="/truck/FoodTruck.glb" position="-5.8306 0 -6.66087" rotation="0 -57.160000000000004 0" sound="src: audio.mp3; autoplay: true; volume:0.3"></a-entity>
 
 <a-entity gltf-model="plant.glb" position="-1.82436 0.0172 -7.73942"></a-entity>
 
